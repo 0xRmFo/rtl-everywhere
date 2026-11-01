@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "RTL Everywhere",
+  "version": "1.1.0",
+  "description": "تحسين اتجاه النص العربي ومحاذاته من اليمين إلى اليسار على جميع المواقع مع الحفاظ على العناصر الحساسة.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "RTL Everywhere",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ]
+}
