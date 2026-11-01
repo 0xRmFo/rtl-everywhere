@@ -10,5 +10,6 @@ h1 { margin: 0; font-size: 20px; letter-spacing: .2px; }
 .row input:checked + i { background: #4f7cff; }
 .row input:checked + i:after { right: 3px; }
 .hint { color: #9ea8bb; font-size: 11px; line-height: 1.6; margin: 12px 0 14px; }
-button { width: 100%; border: 0; border-radius: 8px; padding: 9px; background: #252c3a; color: #fff; cursor: pointer; }
+button { width: 100%; border: 0; border-radius: 8px; padding: 9px; margin-top: 7px; background: #252c3a; color: #fff; cursor: pointer; }
+.row input:focus-visible + i { outline: 2px solid #9cb3ff; outline-offset: 3px; }
 #status { color: #8be0ad; font-size: 11px; min-height: 16px; margin-top: 8px; }

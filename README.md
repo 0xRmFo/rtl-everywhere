@@ -4,67 +4,69 @@
 
 # RTL Everywhere
 
-**اتجاه أوضح. قراءة أريح. بضغطة واحدة.**
+**Right-to-left reading, made simple.**
 
-إضافة مجانية لـ Brave وChrome على الكمبيوتر لتحويل اتجاه الفقرات ومحاذاتها لليمين، مع وضع ذكي للنصوص العربية والإنجليزية.
+Instant RTL text alignment for desktop Brave and Chrome, with smart Arabic/English mode and code protection.
 
-[**⬇ تحميل الإضافة — v1.1.0**](RTL-Everywhere-1.1.0.zip?raw=true) · [English](README.en.md) · [الخصوصية](PRIVACY.md)
+[**Download v1.1.1**](RTL-Everywhere-1.1.1.zip?raw=true) · [Privacy](PRIVACY.md) · [Changelog](CHANGELOG.md)
 
 </div>
 
-## التثبيت في دقيقة
+## Install in a minute
 
-1. **[حمّل الإضافة](RTL-Everywhere-1.1.0.zip?raw=true)** وفك الضغط في مجلد ثابت.
-2. افتح `brave://extensions` في Brave، أو `chrome://extensions` في Chrome.
-3. فعّل **Developer mode — وضع المطوّر**، ثم اضغط **Load unpacked — تحميل إضافة غير مضغوطة**.
-4. اختر المجلد الذي يحتوي على **manifest.json**. انتهى! تعمل الإضافة تلقائيًا على المواقع التي يسمح المتصفح بتعديلها.
+1. **[Download the extension](RTL-Everywhere-1.1.1.zip?raw=true)** and extract the ZIP to a permanent folder.
+2. Open **`brave://extensions`** or **`chrome://extensions`**.
+3. Enable **Developer mode**, then click **Load unpacked**.
+4. Select the extracted folder containing **`manifest.json`**. Done! RTL starts automatically on supported web pages.
 
-> احتفظ بالمجلد بعد التثبيت؛ المتصفح يقرأ الإضافة منه. لا تختَر ملف ZIP نفسه.
+> Keep the extracted folder after installation. Select the folder, not the ZIP file. No Node.js, terminal commands, or build tools required.
 
-## الاستخدام
+## One-click controls
 
-من زر **الإضافات 🧩** افتح **RTL Everywhere**. يمكنك تثبيتها في شريط الأدوات بواسطة رمز الدبوس.
+Open **Extensions → RTL Everywhere**. Pin it to your toolbar for quick access.
 
-| الخيار | ماذا يفعل؟ |
+| Control | What it does |
 |---|---|
-| تفعيل الإضافة | يشغّل تأثير الإضافة أو يوقفه في الصفحات التي تعمل فيها. |
-| تفعيل وتطبيق على الصفحة الآن | يفعّل الإضافة ويطبقها على التبويب الحالي بدون إعادة تحميل الصفحة. |
-| الوضع الذكي للنص المختلط | يجعل الفقرات العربية RTL ويُبقي الفقرات الإنجليزية الخالصة LTR. |
-| فرض RTL على تخطيط الصفحة | يغيّر أيضًا اتجاه جسم الصفحة؛ اختياري وقد يغيّر أماكن بعض العناصر. |
+| **Enable extension** | Turn RTL processing on or off across supported sites. |
+| **Enable and apply now** | Enable the extension and apply it to the current tab without reloading the page. |
+| **Smart mode** | Use RTL for paragraphs containing Arabic or Hebrew characters; keep English-only paragraphs LTR. |
+| **Force page layout RTL** | Also change the body's direction. Optional: this may reposition some controls. |
 
-الوضع الافتراضي يجعل اتجاه الفقرات ومحاذاتها إلى اليمين، ويترك خيار تغيير تخطيط الصفحة مغلقًا. الإعدادات عامة، وليست منفصلة لكل موقع.
+By default, prose uses RTL direction and right alignment, **Smart mode** is off, and **Force page layout RTL** is off. Settings apply globally, not per site.
 
-## المزايا
+## Features
 
-- تطبيق تلقائي على الصفحات الجديدة، ومحاولة تطبيق فورية على التبويبات المفتوحة عند تثبيت الإضافة أو تحديثها.
-- متابعة النصوص التي تظهر لاحقًا، ومنها الردود التي تظهر تدريجيًا.
-- التعامل مع الفقرات التي تحتوي على عناصر متداخلة مثل الروابط والنص العريض.
-- استثناء كتل الكود وحقول الإدخال ومحررات النص المعروفة من تعديل النص مباشرة.
-- دعم الإطارات المسموح بها، وعناصر Shadow DOM المفتوحة التي يكتشفها الفحص.
-- تغيير طريقة العرض فقط: لا ترجمة، ولا إعادة كتابة للكلمات، ولا عكس لترتيب حروف النص الأصلي.
+- Automatic processing on new pages and injection into existing tabs after installation or updates.
+- Support for text added later, including streamed responses.
+- Paragraph alignment through nested links, spans, and bold text.
+- Code blocks, inputs, and known editing surfaces excluded from direct processing.
+- Processing in permitted frames and discovered open shadow roots.
+- Display-only changes: original text characters and word order are not rewritten or translated.
 
-## إذا لم تتغير الصفحة
+## Troubleshooting
 
-افتح الإضافة واضغط **تفعيل وتطبيق على الصفحة الآن**. إذا لم يعمل، تأكد من تفعيل الإضافة ومن السماح لها بالعمل على الموقع في إعدادات المتصفح. يمكن تجربة إعادة تحميل التبويب بعد تثبيت الإضافة أو تحديثها.
+**The page did not change:** open the extension and click **Enable and apply now**. Check that it is enabled and allowed to access the site. Reloading the tab can help after installation or updates.
 
-إذا لاحظت تغيّر أماكن الأزرار، أغلق **فرض RTL على تخطيط الصفحة**. وإذا أردت بقاء الفقرات الإنجليزية باتجاهها المعتاد، شغّل **الوضع الذكي**.
+**Controls moved:** turn off **Force page layout RTL**.
 
-## حدود الدعم
+**English paragraphs should stay left-to-right:** turn on **Smart mode**.
 
-لا توجد إضافة تستطيع تعديل كل صفحة حرفيًا: صفحات إعدادات المتصفح ومتجر الإضافات والصفحات المحمية لا تسمح بهذا النوع من التعديل. الإضافة مخصصة لنصوص صفحات الويب، ولا تغيّر النص داخل الصور أو Canvas أو عارض PDF المدمج. لا تدعم Shadow DOM المغلق، وقد تحتاج بعض المواقع ذات التنسيق الخاص إلى معالجة إضافية.
+## Update
 
-هذه نسخة تُثبت يدويًا، وليست منشورة في Chrome Web Store. لا تعمل بهذه الطريقة على Brave أو Chrome للجوال. قد تمنع أجهزة العمل أو الجامعة تثبيت الإضافات.
+Download the newer version, replace the extension files in the **same permanent folder**, and click **Reload** on the extension's card at the extensions page. Use **Enable and apply now** for tabs that have not updated.
 
-## التحديث
+## Compatibility
 
-نزّل الإصدار الجديد، وفك ملفاته داخل **نفس مجلد الإضافة السابق**، ثم افتح صفحة الإضافات واضغط زر **إعادة التحميل ↻** على بطاقة RTL Everywhere. استخدم زر التطبيق الفوري في أي تبويب لم يتحدث.
+Designed for **desktop Brave and Chrome**. This is a manually installed extension, not a Chrome Web Store listing. These installation steps do not apply to Brave or Chrome mobile. Managed devices may restrict extension installation.
 
-## الخصوصية والصلاحيات
+Browser settings, extension stores, and other protected pages cannot be modified. Text inside images, Canvas, and the built-in PDF viewer is not supported. Closed shadow roots are not supported. Some site-specific layouts may need additional handling; universal compatibility is not guaranteed.
 
-لا تحتوي الإضافة على إعلانات أو أدوات تحليلات أو طلبات شبكة لجمع محتوى الصفحات. تستخدم صلاحية الوصول للمواقع لتغيير اتجاه النص فيها. تُحفظ خيارات التشغيل باستخدام `chrome.storage.sync`، وقد يزامنها المتصفح وفق إعدادات حساب المستخدم. [اقرأ التفاصيل](PRIVACY.md).
+## Privacy
 
-## ملفات المشروع
+No analytics, advertisements, or requests that collect page content are included. Preferences use `chrome.storage.sync` and may sync according to your browser's account settings. [Read the privacy notice](PRIVACY.md).
 
-ملفات المصدر موجودة مباشرة في جذر المستودع، وملف `RTL-Everywhere-1.1.0.zip` يحتوي على ملفات الإضافة فقط للتثبيت السريع. يمكنك أيضًا تحميل المستودع كاملًا واختيار مجلده في Load unpacked. لا تحتاج Node.js أو أي بناء برمجي لتثبيت الإضافة.
+## Source and feedback
 
-للإبلاغ عن مشكلة، افتح تبويب **Issues** في هذا المستودع، واذكر اسم الموقع، وما توقعت ظهوره، وما حدث. لا ترفق معلومات شخصية أو محادثات خاصة.
+The repository root is the loadable source. **`RTL-Everywhere-1.1.1.zip`** contains only the extension files for quick installation. You can also download the entire repository and load its extracted folder.
+
+Found a problem? Open an **Issue** with the site name, expected behavior, and actual behavior. Avoid sharing private conversations or personal information.

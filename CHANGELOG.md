@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+- Switch all extension controls, settings, and status messages to English.
+- Publish an English README and privacy notice with a concise installation guide.
+- Improve popup button spacing and keyboard focus visibility.
+
 ## 1.1.0
 
 - Inject into existing tabs after installation and updates.

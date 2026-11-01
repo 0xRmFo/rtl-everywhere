@@ -4,7 +4,7 @@ async function inject(tabId) {
     await chrome.scripting.executeScript({ target: { tabId, allFrames: true }, files: ['content.js'] });
     return await chrome.tabs.sendMessage(tabId, { type: 'RTL_REFRESH' }, { frameId: 0 });
   } catch {
-    return { error: 'لا يمكن تعديل هذه الصفحة. افتح موقعًا عاديًا وتأكد من السماح للإضافة بالوصول للموقع.' };
+    return { error: 'Cannot modify this page. Open a regular website and allow the extension to access it.' };
   }
 }
 async function injectOpenTabs() {
